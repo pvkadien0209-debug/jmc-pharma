@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --accent: #10b981;
+  --bg: #f8fafc;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background: var(--bg);
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0284c7;
+  border-radius: 99px;
+}
+
+/* Animate on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0284c7, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section padding */
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(2, 132, 199, 0.85) 0%,
+    rgba(3, 105, 161, 0.7) 50%,
+    rgba(16, 185, 129, 0.6) 100%
+  );
+}
+
+/* Product card hover */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-primary-600 text-white px-6 py-3 rounded-2xl font-semibold hover:bg-primary-700 active:scale-95 transition-all duration-200 shadow-lg shadow-primary-200;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-2xl font-semibold hover:bg-primary-600 hover:text-white transition-all duration-200;
+}
+
+/* Nav active link */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0284c7;
+  transition: width 0.3s ease;
+  border-radius: 99px;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Marquee */
+.marquee-wrapper {
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Blog expand */
+.blog-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.blog-expand.open {
+  max-height: 600px;
+}
+
+/* Floating dots background */
+.dot-pattern {
+  background-image: radial-gradient(circle, #0284c730 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Mobile hamburger animation */
+.hamburger-line {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
