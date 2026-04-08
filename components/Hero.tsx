@@ -63,8 +63,8 @@ export default function Hero() {
             <div className="flex flex-wrap gap-6">
               {[
                 { value: "6+", label: "Sản phẩm" },
-                { value: "6+", label: "Bệnh viện" },
-                { value: "7+", label: "Hội nghị" },
+                { value: "100+", label: "Bệnh viện" },
+                { value: "30+", label: "Hội nghị" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="text-3xl font-black text-accent-400">
@@ -136,7 +136,7 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-4 -left-4 bg-accent-500 rounded-2xl px-4 py-2 shadow-xl">
                 <p className="text-white font-bold text-sm">
-                  🏥 6 Bệnh viện lớn
+                  🏥 100+ Bệnh viện lớn
                 </p>
               </div>
             </div>

@@ -92,7 +92,7 @@ export default function Clients() {
                 <h4 className="font-bold text-slate-800 text-sm leading-snug group-hover:text-primary-700 transition-colors mb-2">
                   {client.name}
                 </h4>
-                <div className="flex flex-wrap gap-1">
+                {/* <div className="flex flex-wrap gap-1">
                   {client.products.map((prod) => (
                     <span
                       key={prod}
@@ -101,7 +101,7 @@ export default function Clients() {
                       {prod}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
@@ -111,7 +111,7 @@ export default function Clients() {
         <div className="mt-12 bg-gradient-to-r from-primary-600 to-accent-500 rounded-3xl p-8 animate-on-scroll">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { value: "6+", label: "Bệnh viện đối tác" },
+              { value: "100+", label: "Bệnh viện đối tác" },
               { value: "100%", label: "Sản phẩm chính hãng" },
               { value: "2024", label: "Năm thành lập" },
               { value: "★★★★★", label: "Đánh giá dịch vụ" },
