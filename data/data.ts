@@ -653,7 +653,7 @@ export const events = [
     title: "Hội nghị Tái tạo khớp (22.11.2025)",
     images: ["/img/Hội nghị Tái tạo khớp.jpg"],
     description:
-      "Diễn đàn được tổ chức tại Bệnh viên 115, là nơi để các bác sĩ tại Việt Nam tổng kết các ca lâm sàng khó và cập nhật xu hướng điều trị 'bảo tồn kết hợp tái tạo' nhằm cải thiện chất lượng sống cho bệnh nhân thoái hóa khớp",
+      "Diễn đàn được tổ chức tại Bệnh viện 115, là nơi để các bác sĩ tại Việt Nam tổng kết các ca lâm sàng khó và cập nhật xu hướng điều trị 'bảo tồn kết hợp tái tạo' nhằm cải thiện chất lượng sống cho bệnh nhân thoái hóa khớp",
     date: "22/11/2025",
   },
   {
@@ -710,5 +710,65 @@ export const clients = [
     name: "Bệnh viện Quân Dân Y Miền Đông",
     products: ["Viscos", "Proyal"],
     image: "/img/QUANDANYMIENDONG.png",
+  },
+  {
+    stt: 7,
+    name: "Bệnh viện Nguyễn Tri Phương",
+    products: [],
+    image: "/img/nguyen-tri-phuong.jpg",
+  },
+  {
+    stt: 8,
+    name: "Bệnh viên 175",
+    products: [],
+    image: "/img/ntp.png",
+  },
+  {
+    stt: 9,
+    name: "Bệnh viện Thành Phố Thủ Đức",
+    products: [],
+    image: "/img/tptd.jpg",
+  },
+  {
+    stt: 10,
+    name: "Bệnh viện Chợ Rẫy",
+    products: [],
+    image: "/img/choray.webp",
+  },
+  {
+    stt: 11,
+    name: "Bệnh viện 115",
+    products: [],
+    image: "/img/115.jpg",
+  },
+  {
+    stt: 13,
+    name: "Bệnh viện Trưng Vương",
+    products: [],
+    image: "/img/TRUNGVUONG.jpg",
+  },
+  {
+    stt: 14,
+    name: "Phòng khám Xương Khớp Việt",
+    products: [],
+    image: "/img/XUONGKHOPVIET.jpg",
+  },
+  {
+    stt: 15,
+    name: "Phòng khám Mỹ Quốc",
+    products: [],
+    image: "/img/myquoc.jpg",
+  },
+  {
+    stt: 16,
+    name: "Phòng khám Bonedoc",
+    products: [],
+    image: "/img/bonedoc.jpg",
+  },
+  {
+    stt: 17,
+    name: "Phòng khám 728",
+    products: [],
+    image: "/img/728.jpg",
   },
 ];
